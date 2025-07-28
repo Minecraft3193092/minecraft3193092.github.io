@@ -1,0 +1,94 @@
+html {
+font-family: setofont;
+background: rgba(255, 192, 203, 0.25);
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgba(255, 192, 203, 0.1);
+}
+}
+h1.ttitle {
+  background-color: pink;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* unvisited link */
+a {
+  color: white;
+  text-decoration:none;
+}
+}
+.button {
+  background-color: rgba(255, 192, 203, 0.3);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 4px 2px;
+a:link {
+  color: white;
+  text-decoration:none;
+}
+a:visited {
+  color: white;
+  text-decoration:none;
+}
+a:hover {
+  color: white;
+  text-decoration:none;
+}
+a:active {
+  color: rgba(255, 192, 203, 0.1);
+  text-decoration:none;
+}
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  height: 30px; /* Should be removed. Only for demonstration */
+}
+.webtab {
+  background-color: rgba(255, 192, 203, 0.4);
+  color: white;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  width: 19.30%;
+  height: 30px;
+  
+a:link {
+  color: white;
+  text-decoration:none;
+}
+a:visited {
+  color: white;
+  text-decoration:none;
+}
+a:hover {
+  color: white;
+  text-decoration:none;
+}
+a:active {
+  color: rgba(255, 192, 203, 0.1);
+  text-decoration:none;
+}
+}

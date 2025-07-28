@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link href="/css/styles.css">
+</head>
+<body>
+    {% include header.html %} {# This includes your header #}
+
+    <main>
+        {{ content }} {# This is where the page-specific content goes #}
+    </main>
+
+    {% include footer.html %} {# This includes your footer #}
+</body>
+</html>
