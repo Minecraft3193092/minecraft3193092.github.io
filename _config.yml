@@ -1,0 +1,100 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Your Site Title # Appears in {{ site.title }}
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+baseurl: "/your-repo-name" # the subpath of your site, e.g. "/blog"
+url: "https://yourusername.github.io" # the base hostname & protocol for your site, e.g. "http://example.com"
+# For GitHub Pages, `baseurl` should be the repository name if it's a project page.
+# If it's a user/organization page (e.g., yourusername.github.io), `baseurl` should be an empty string: baseurl: ""
+
+# Build settings
+markdown: kramdown # Or 'commonmark', 'GFM', etc.
+theme: minima # If you're using a gem-based theme
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  # - jekyll-paginate # Uncomment if you're using pagination
+  # - jekyll-seo-tag # Good for SEO meta tags
+
+# Permalinks (how your URLs are structured)
+# Common options:
+# permalink: /:categories/:year/:month/:day/:title/ # Classic blog style
+# permalink: /:title/ # Simpler, good for pages
+# permalink: /:collection/:name/ # For collections
+permalink: pretty # This creates nice, clean URLs like /about/ instead of /about.html
+
+# Front Matter Defaults
+# This is incredibly useful for setting default front matter variables
+# for different types of content (posts, pages, collections).
+defaults:
+  - scope:
+      path: "" # An empty string means all files in the site
+      type: "posts" # Specifies that these defaults apply only to posts
+    values:
+      layout: "post" # Default layout for all posts
+      author: "Your Name"
+      comments: true # Example: enable comments by default for posts
+  - scope:
+      path: "" # All files
+      type: "pages" # Specifies that these defaults apply only to pages
+    values:
+      layout: "page" # Default layout for all pages (e.g., about.html)
+  # Example for a custom collection (e.g., if you have _projects)
+  # - scope:
+  #     path: "_projects"
+  #     type: "projects" # This matches the collection name below
+  #   values:
+  #     layout: "project"
+  #     category: "portfolio"
+
+# Collections (if you have custom content types beyond posts and pages)
+# collections:
+#   projects:
+#     output: true # Set to true if you want each item in the collection to get its own page
+#     permalink: /projects/:name/ # Custom permalink for projects
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - vendor/
+  # - CNAME # If you have a custom domain CNAME file in your root, it's often excluded here.
+
+# Other useful settings
+timezone: Asia/Taipei # Set your local timezone (IANA Time Zone Database names)
+lang: en-US # Language for your site
+
+# Liquid options (advanced)
+# liquid:
+#   error_mode: strict # warn, lax (default is lax)
+
+# Markdown options (advanced, specific to kramdown)
+# kramdown:
+#   math_engine: mathjax # or katex
+#   syntax_highlighter: rouge # or highlight.js, etc.
+
+
+defaults:
+  - scope:
+      path: "" # An empty string means all files in the site
+      type: "pages" # Apply to all files treated as pages (e.g., index.html, about.md)
+    values:
+      layout: "default" # Automatically assign 'default' layout
+  - scope:
+      path: ""
+      type: "posts" # Apply to all files in _posts
+    values:
+      layout: "post" # Or 'default', if you want posts to use the same default layout
