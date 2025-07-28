@@ -85,16 +85,3 @@ lang: en-US # Language for your site
 # kramdown:
 #   math_engine: mathjax # or katex
 #   syntax_highlighter: rouge # or highlight.js, etc.
-
-
-defaults:
-  - scope:
-      path: "" # An empty string means all files in the site
-      type: "pages" # Apply to all files treated as pages (e.g., index.html, about.md)
-    values:
-      layout: "default" # Automatically assign 'default' layout
-  - scope:
-      path: ""
-      type: "posts" # Apply to all files in _posts
-    values:
-      layout: "post" # Or 'default', if you want posts to use the same default layout
