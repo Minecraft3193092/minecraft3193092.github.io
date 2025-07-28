@@ -1,3 +1,7 @@
+@font-face {
+  font-family: setofont;
+  src: url(/css/setofont/setofont.ttf);
+}
 html {
 font-family: setofont;
 background: rgba(255, 192, 203, 0.25);
@@ -22,6 +26,17 @@ a:active {
 }
 }
 h1.ttitle {
+  background-color: pink;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* unvisited link */
+a {
+  color: white;
+  text-decoration:none;
+}
+}
+p.ffooter {
   background-color: pink;
   color: white;
   text-align: center;
